@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <title>Order Now</title>
     <style>
-      body, html { height: 100%; margin: 0; }
-      iframe { width: 100vw; height: 100vh; border: none; }
+      body, html { 
+        height: 100%; 
+        margin: 0; 
+        overflow: hidden;
+      }
+      iframe { 
+        width: 100vw; 
+        height: 100vh; 
+        border: none; 
+      }
     </style>
   </head>
   <body>
-    <iframe src="https://maxpizzeria.avcoindustries.com/order-now"></iframe>
+    <iframe 
+      src="https://maxpizzeria.avcoindustries.com/order-now"
+      sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+      allow="payment"
+    ></iframe>
   </body>
 </html>
